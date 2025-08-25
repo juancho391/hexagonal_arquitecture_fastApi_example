@@ -15,6 +15,10 @@ this project have such funcionalities like:
   - Create a order
   - get all orders
 
+# Project structure
+
+![project-structure](docs/Project-structure.png)
+
 # Stack
 
 - Python 3.12.9
@@ -25,10 +29,9 @@ this project have such funcionalities like:
 
 Make sure you have installed all the following prerequsites on your development machine
 
-- Python3.12
-- GIT
-- sqlite3 or database of your preference
-- Rye
+- [Python 3.9](https://www.python.org/downloads/)
+- [GIT](https://git-scm.com/downloads)
+- [RYE](https://rye.astral.sh)
 
 I recommend use rye for install the project dependencies
 
@@ -36,14 +39,24 @@ I recommend use rye for install the project dependencies
 
 1. Install depedencies
 
-rye sync
+```bash
+$ rye sync
+```
 
 # Running app localy
 
-1. in the main projects directory create a new .env file and copy al the variables from .env.example
+1. in the main projects directory create a new `.env` file and copy al the variables from `.env.example`
 
-2. go to src/hexagonal_arquitecture_example and run rye run uvicorn main:app --reload
+2. go to `src/hexagonal_arquitecture_example` and run the following command
+
+```bash
+$ rye run uvicorn main:app --reload
+```
 
 ## Tests
 
-for tests go to main project directory and run 'rye run pytests -v'
+go to main project directory and run
+
+```bash
+$ 'rye run pytests -v'
+```

@@ -58,5 +58,5 @@ $ rye run uvicorn main:app --reload
 go to main project directory and run
 
 ```bash
-$ 'rye run pytests -v'
+$ rye run pytests -v
 ```

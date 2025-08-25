@@ -1,0 +1,32 @@
+[project]
+name = "hexagonal-arquitecture-example"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "juancho391", email = "juanchischis2010@hotmail.com" }
+]
+dependencies = [
+    "fastapi>=0.116.1",
+    "uvicorn>=0.35.0",
+    "kink>=0.8.1",
+    "pytest>=8.4.1",
+    "httpx>=0.28.1",
+    "sqlmodel>=0.0.24",
+    "dotenv>=0.9.9",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hexagonal_arquitecture_example"]

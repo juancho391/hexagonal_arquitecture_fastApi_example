@@ -1,0 +1,4 @@
+from hexagonal_arquitecture_example.bootstrap import bootstrap_setup_dependencies
+from hexagonal_arquitecture_example.building_blocks.db import init_db
+
+bootstrap_setup_dependencies()
